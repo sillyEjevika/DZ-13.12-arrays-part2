@@ -35,8 +35,6 @@ public class Main {
             if (arr[i]>maxSpend) {
                 maxSpend = arr[i];
             }
-        }
-        for (int i = 1; i < arr.length; i++) {
             if (arr[i] < minSpend) {
                 minSpend = arr[i];
             }
@@ -51,11 +49,10 @@ public class Main {
         int[] arr = generateRandomArray();
         int sum = 0;
         double average = 0;
-        int month = 30;
         for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
-            average = sum/month;
         }
+        average = sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
     }
     public static void task4() {
