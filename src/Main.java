@@ -47,7 +47,7 @@ public class Main {
         System.out.println("Задача №3");
 
         int[] arr = generateRandomArray();
-        int sum = 0;
+        double sum = 0;
         double average = 0;
         for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
